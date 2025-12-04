@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa - De Película</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hero-section position-relative">
+        <img src="img/estrella.webp" class="deco-img top-left" alt="Estrella">
+        <img src="img/cinta.webp" class="deco-img top-right" alt="Cinta de cine">
+        
+        <div class="text-center position-relative z-2">
+            <p class="h6 text-uppercase mb-3 tracking-wider text-gold">Volarte Presenta</p>
+            
+            <h1 class="title-serif">UNA MUESTRA<br>DE PELÍCULA<br>Vol.2 </h1>
+            
+            <div class="event-info mt-4 mb-4">
+                <div class="d-flex justify-content-center align-items-center gap-3">
+                    <span class="display-5">05.12.2025</span>
+                </div>
+                <hr style="margin: 5px 0; border-color: black; opacity: 1;">
+                <p class="fs-6 mb-0">21:30 HS | SALA NINÍ MARSHALL</p>
+            </div>
+            
+            <div class="text-center">
+                <p class="mt-4 fw-bold mx-auto text-gold-dark" style="width: 50%;">↓ Desliza para ver la Cartelera ↓</p>
+            </div>
+            <div class="text-center">
+                
+            </div>
+        </div>
+
+        <img src="img/pochoclos.webp" class="deco-img bottom-left" alt="Pochoclos">
+        <img src="img/claqueta-cine.webp" class="deco-img bottom-right" alt="Claqueta">
+    </div>
+
+    <div class="container position-relative z-2">
+        <div id="carouselProgram" class="carousel slide" data-bs-interval="false">
+            
+            <div class="carousel-inner pb-4">
+
+                <div class="carousel-item active">
+                    <div class="card card-movie">
+                        <img src="img/Entrada.webp" class="card-img-top" alt="Entrada">
+                        <div class="card-body">
+                            <span class="role-badge">Apertura</span>
+                            <h3 class="card-title mt-3">Entrada</h3>
+                            <p class="card-text">
+                                <strong>Elenco Completo:</strong><br>
+                                Vero, Emi M, Lau, Almi, Noe, Yani, Cata, Lu, Dai M, Dai L, Vicky, Emi A, Luqui, Vale, Cami, Bel, Majo, Cele, Brisa, Lua, Sam y Joha.
+                            </p>
+                            <hr class="border-gold">
+                            <p class="song-text"><i class="fas fa-film me-2"></i> Soundtrack Mix</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card card-movie">
+                        <img src="img/Amelie.webp" class="card-img-top" alt="Amelie">
+                        <div class="card-body">
+                            <span class="role-badge">Dúo</span>
+                            <h3 class="card-title mt-3">Amelie</h3>
+                            <p class="card-text"><strong>Protagonistas:</strong><br>Lau y Almi</p>
+                            <hr class="border-gold">
+                            <p class="song-text"><i class="fas fa-music me-2"></i> Comptine d'un autre été</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card card-movie">
+                        <img src="img/Coco.webp" class="card-img-top" alt="Coco">
+                        <div class="card-body">
+                            <span class="role-badge">Dúo</span>
+                            <h3 class="card-title mt-3">Coco</h3>
+                            <p class="card-text"><strong>Protagonistas:</strong><br>Yani y Noe</p>
+                            <hr class="border-gold">
+                            <p class="song-text"><i class="fas fa-guitar me-2"></i> Un Poco Loco / Coco</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card card-movie">
+                        <img src="img/Harry Potter.webp" class="card-img-top" alt="Harry Potter">
+                        <div class="card-body">
+                            <span class="role-badge">Trío</span>
+                            <h3 class="card-title mt-3">Harry Potter</h3>
+                            <p class="card-text"><strong>Protagonistas:</strong><br>Lu, Cata y Dai M.</p>
+                            <hr class="border-gold">
+                            <p class="song-text"><i class="fas fa-wand-magic-sparkles me-2"></i> Hedwig's Theme</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card card-movie">
+                        <img src="img/Jurassic Park.webp" class="card-img-top" alt="Jurassic Park">
+                        <div class="card-body">
+                            <span class="role-badge">Interludio</span>
+                            <h3 class="card-title mt-3">Jurassic Park</h3>
+                            <p class="card-text"><strong>Protagonistas:</strong><br>Sam y Luqui</p>
+                            <hr class="border-gold">
+                            <p class="song-text"><i class="fas fa-dragon me-2"></i> Theme Song</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card card-movie">
+                        <img src="img/Suicide Squad.webp" class="card-img-top" alt="Suicide Squad">
+                        <div class="card-body">
+                            <span class="role-badge">Dúo</span>
+                            <h3 class="card-title mt-3">Suicide Squad</h3>
+                            <p class="card-text"><strong>Protagonistas:</strong><br>Vicky y Emi A.</p>
+                            <hr class="border-gold">
+                            <p class="song-text"><i class="fas fa-music me-2"></i> Gangsta & Heathens</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card card-movie">
+                        <img src="img/Cruel Intentions.webp" class="card-img-top" alt="Cruel Intentions">
+                        <div class="card-body">
+                            <span class="role-badge">Trío</span>
+                            <h3 class="card-title mt-3">Cruel Intentions</h3>
+                            <p class="card-text"><strong>Protagonistas:</strong><br>Sam, Joha y Majo</p>
+                            <hr class="border-gold">
+                            <p class="song-text"><i class="fas fa-violin me-2"></i> Bitter Sweet Symphony</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card card-movie">
+                        <img src="img/Crazy Rich Asians.webp" class="card-img-top" alt="Crazy Rich Asians">
+                        <div class="card-body">
+                            <span class="role-badge">Dúo</span>
+                            <h3 class="card-title mt-3">Crazy Rich Asians</h3>
+                            <p class="card-text"><strong>Protagonistas:</strong><br>Reni y Vero</p>
+                            <hr class="border-gold">
+                            <p class="song-text"><i class="fas fa-heart me-2"></i> Can't Help Falling In Love</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card card-movie">
+                        <img src="img/White Chicks.webp" class="card-img-top" alt="White Chicks">
+                        <div class="card-body">
+                            <span class="role-badge">Dúo</span>
+                            <h3 class="card-title mt-3">¿Y dónde están las rubias?</h3>
+                            <p class="card-text"><strong>Protagonistas:</strong><br>Luqui y Emi A.</p>
+                            <hr class="border-gold">
+                            <p class="song-text"><i class="fas fa-music me-2"></i> A Thousand Miles</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card card-movie">
+                        <img src="img/Barbie.webp" class="card-img-top" alt="Barbie">
+                        <div class="card-body">
+                            <span class="role-badge">Trío</span>
+                            <h3 class="card-title mt-3">Barbie</h3>
+                            <p class="card-text"><strong>Protagonistas:</strong><br>Cami, Vale y Emi M.</p>
+                            <hr class="border-gold">
+                            <p class="song-text"><i class="fas fa-star me-2"></i> What Was I Made For</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card card-movie">
+                        <img src="img/A Star Is Born.webp" class="card-img-top" alt="A Star Is Born">
+                        <div class="card-body">
+                            <span class="role-badge">Dúo</span>
+                            <h3 class="card-title mt-3">Nace una Estrella</h3>
+                            <p class="card-text"><strong>Protagonistas:</strong><br>Majo y Bel</p>
+                            <hr class="border-gold">
+                            <p class="song-text"><i class="fas fa-microphone me-2"></i> Shallow</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card card-movie">
+                        <img src="img/The Grinch.webp" class="card-img-top" alt="The Grinch">
+                        <div class="card-body">
+                            <span class="role-badge">Dúo</span>
+                            <h3 class="card-title mt-3">El Grinch</h3>
+                            <p class="card-text"><strong>Protagonistas:</strong><br>Yani y Sam</p>
+                            <hr class="border-gold">
+                            <p class="song-text"><i class="fas fa-snowflake me-2"></i> You're a Mean One</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card card-movie">
+                        <img src="img/Beetlejuice.webp" class="card-img-top" alt="Beetlejuice">
+                        <div class="card-body">
+                            <span class="role-badge">Dúo</span>
+                            <h3 class="card-title mt-3">Beetlejuice</h3>
+                            <p class="card-text"><strong>Protagonistas:</strong><br>Cele y Luqui</p>
+                            <hr class="border-gold">
+                            <p class="song-text"><i class="fas fa-ghost me-2"></i> Main Theme</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card card-movie">
+                        <img src="img/Anastasia.webp" class="card-img-top" alt="Anastasia">
+                        <div class="card-body">
+                            <span class="role-badge">Dúo</span>
+                            <h3 class="card-title mt-3">Anastasia</h3>
+                            <p class="card-text"><strong>Protagonistas:</strong><br>Brisa y Lua</p>
+                            <hr class="border-gold">
+                            <p class="song-text"><i class="fas fa-crown me-2"></i> Once Upon a December</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card card-movie">
+                        <img src="img/Notting Hill.webp" class="card-img-top" alt="Notting Hill">
+                        <div class="card-body">
+                            <span class="role-badge">Dúo</span>
+                            <h3 class="card-title mt-3">Notting Hill</h3>
+                            <p class="card-text"><strong>Protagonistas:</strong><br>Luqui y Cami</p>
+                            <hr class="border-gold">
+                            <p class="song-text"><i class="fas fa-sun me-2"></i> Ain't No Sunshine</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card card-movie">
+                        <img src="img/Armageddon.webp" class="card-img-top" alt="Armageddon">
+                        <div class="card-body">
+                            <span class="role-badge">Trío</span>
+                            <h3 class="card-title mt-3">Armageddon</h3>
+                            <p class="card-text"><strong>Protagonistas:</strong><br>Cele, Dai L. y Joha</p>
+                            <hr class="border-gold">
+                            <p class="song-text"><i class="fas fa-rocket me-2"></i> I Don't Want to Miss a Thing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card card-movie">
+                        <img src="img/James Bond.webp" class="card-img-top" alt="James Bond">
+                        <div class="card-body">
+                            <span class="role-badge">Grupal</span>
+                            <h3 class="card-title mt-3">James Bond</h3>
+                            <p class="card-text"><strong>Protagonistas:</strong><br>Cami, Reni, Emi M, Sam, Bel, Majo y Vero</p>
+                            <hr class="border-gold">
+                            <p class="song-text"><i class="fas fa-user-secret me-2"></i> 007 Theme</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card card-movie">
+                        <img src="img/Salida.webp" class="card-img-top" alt="Salida">
+                        <div class="card-body">
+                            <span class="role-badge">Cierre</span>
+                            <h3 class="card-title mt-3">Salida: Moulin Rouge</h3>
+                            <p class="card-text">
+                                <strong>Elenco Completo:</strong><br>
+                                Vero, Emi M, Lau, Almi, Noe, Yani, Cata, Lu, Dai M, Dai L, Vicky, Emi A, Luqui, Vale, Cami, Bel, Majo, Cele, Brisa, Lua, Sam y Joha.
+                            </p>
+                            <hr class="border-gold">
+                            <p class="song-text"><i class="fas fa-wine-glass me-2"></i> Lady Marmalade / Roxanne</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProgram" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProgram" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="d-flex justify-content-center mb-4">
+            <img src="img/logo.webp" alt="Volarte" class="logo-footer">
+        </div>
+        
+        <div class="social-icons">
+            <a href="https://wa.me/5492901417401" target="_blank" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/volarte.acrobacia" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

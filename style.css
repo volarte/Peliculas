@@ -1,0 +1,232 @@
+:root {
+    /* --- PALETA FLYER (Azul, Amarillo, Rojo, Crema) --- */
+    --blue-main: #0f2c59;       /* Azul fondo principal */
+    --blue-stripe: #0a2142;     /* Azul más oscuro para la raya */
+    --yellow-pop: #ffc845;      /* Amarillo del título */
+    --red-curtain: #e83f5b;     /* Rojo de cortinas/alfombra */
+    --cream-text: #fdfbf7;      /* Color crema para textos */
+    
+    --card-bg: #ffffff;
+    --text-color: #111111;
+    
+    /* Fuentes del Sistema */
+    /* Usamos Impact o Arial Black para imitar las letras gruesas del flyer */
+    --font-display: Impact, "Arial Black", "Franklin Gothic Medium", sans-serif; 
+    --font-clean: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    /* Fondo de rayas verticales azules (Estilo Flyer) */
+    background-color: var(--blue-main);
+    background-image: repeating-linear-gradient(
+        90deg,
+        var(--blue-main),
+        var(--blue-main) 20px,
+        var(--blue-stripe) 20px,
+        var(--blue-stripe) 40px
+    );
+    color: var(--text-color);
+    font-family: var(--font-clean);
+    text-align: center;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* --- TIPOGRAFÍA ESTILO FLYER --- */
+.title-serif {
+    font-family: var(--font-display);
+    font-size: 3.5rem; /* Letra bien grande y gruesa */
+    margin-bottom: 5px;
+    line-height: 1;
+    color: var(--yellow-pop); /* Amarillo */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* Sombra dura para efecto 3D/Pop */
+    text-shadow: 4px 4px 0px #000000; 
+    transform: rotate(-2deg); /* Un toque inclinado como el flyer */
+}
+
+.subtitle-sans {
+    font-family: var(--font-clean);
+    font-weight: 800;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: var(--cream-text);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    background-color: var(--red-curtain); /* Fondo rojo tipo etiqueta */
+    padding: 5px 15px;
+    border-radius: 4px;
+    display: inline-block;
+    transform: rotate(1deg);
+}
+
+.text-gold { color: var(--yellow-pop); text-shadow: 1px 1px 0 #000; }
+.text-gold-dark { color: var(--cream-text); } /* Texto "Desliza" en claro */
+
+.tracking-wider {
+    letter-spacing: 0.2em;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+/* --- HERO SECTION --- */
+.hero-section {
+    padding: 80px 20px 40px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+/* Animación Flotante */
+@keyframes float {
+    0% { transform: translateY(0px) rotate(var(--rot)); }
+    50% { transform: translateY(-12px) rotate(var(--rot)); }
+    100% { transform: translateY(0px) rotate(var(--rot)); }
+}
+
+.deco-img {
+    position: absolute;
+    z-index: 1;
+    opacity: 1; /* Más vibrante */
+    pointer-events: none;
+    filter: drop-shadow(0 5px 5px rgba(0,0,0,0.3));
+    animation: float 5s ease-in-out infinite;
+}
+
+/* Ajustamos posiciones para el nuevo layout */
+.top-left { top: 20px; left: 5px; height: 12vh; --rot: -10deg; } /* Estrellas más chicas */
+.top-right { top: 10px; right: 5px; height: 12vh; --rot: 10deg; animation-delay: 1s; }
+.bottom-left { bottom: 10px; left: -10px; height: 12vh; --rot: 5deg; animation-delay: 2s; }
+.bottom-right { bottom: 20px; right: -10px; height: 12vh; --rot: -5deg; animation-delay: 0.5s; }
+
+/* Información del evento (Estilo CAJA AMARILLA del Flyer) */
+.event-info {
+    background: var(--yellow-pop); /* Fondo amarillo */
+    padding: 15px 30px;
+    border: 3px solid #000; /* Borde negro estilo cómic */
+    box-shadow: 5px 5px 0px #000; /* Sombra dura negra */
+    display: inline-block;
+    border-radius: 0; /* Cuadrado */
+    transform: rotate(1deg); /* Ligera rotación */
+    
+    font-family: var(--font-clean);
+    color: #000; /* Texto negro */
+    text-transform: uppercase;
+}
+
+/* Quitamos los adornos de ticket del diseño anterior */
+.event-info::before, .event-info::after { display: none; }
+
+.event-info .display-5 { 
+    font-weight: 900; 
+    color: #000; 
+    font-family: var(--font-display); /* Números gruesos */
+}
+.event-info span, .event-info p { font-weight: 800; }
+
+/* --- TARJETAS DE PELÍCULA --- */
+.carousel-inner { padding: 20px 0 0px; }
+
+.card-movie {
+    background-color: #fff;
+    border: 3px solid var(--yellow-pop); /* Borde amarillo */
+    border-radius: 15px;
+    margin: 0 auto;
+    max-width: 340px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--yellow-pop);
+}
+
+.card-body { padding: 30px 20px; position: relative; }
+
+.card-title {
+    font-family: var(--font-display); /* Título grueso */
+    font-size: 2rem;
+    color: var(--blue-main);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Badge (Rol) - Rojo estilo cortina */
+.role-badge {
+    background-color: var(--red-curtain);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border: 2px solid white;
+}
+
+.border-gold {
+    border-top: 3px dashed var(--blue-main); /* Línea punteada azul */
+    opacity: 1;
+    margin: 1.5rem auto;
+    width: 60px;
+}
+
+.song-text {
+    font-weight: 700;
+    color: var(--blue-main);
+    background: #eef2f7;
+    padding: 8px 15px;
+    border-radius: 8px;
+    display: inline-block;
+}
+.song-text i { color: var(--red-curtain); }
+
+/* --- CONTROLES Y FOOTER --- */
+.carousel-control-prev, .carousel-control-next {
+    width: 45px; height: 45px;
+    background: var(--red-curtain); /* Flechas rojas */
+    border-radius: 50%;
+    top: 50%; opacity: 1;
+    border: 2px solid white;
+    box-shadow: 0 4px 0px rgba(0,0,0,0.3);
+}
+
+footer {
+    padding: 40px 20px;
+    background: rgba(0,0,0,0.3); /* Oscuro transparente */
+    border-top: none;
+    color: var(--cream-text);
+}
+
+.social-btn {
+    display: inline-flex; justify-content: center; align-items: center;
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    background: var(--yellow-pop);
+    color: #000;
+    font-size: 1.5rem; margin: 0 8px;
+    transition: 0.3s;
+    border: 2px solid #000;
+}
+.social-btn:hover {
+    background: white;
+    transform: scale(1.1);
+}
+
+.logo-footer {
+    max-width: 80px;
+    transition: transform 0.5s ease;
+}
